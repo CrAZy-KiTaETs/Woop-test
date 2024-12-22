@@ -1,0 +1,59 @@
+@use "./globals.scss" as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+  }
+}
+
+.category {
+  &-che {
+    cursor: pointer;
+    color: goldenrod !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-med {
+    cursor: pointer;
+    color: green !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-eco {
+    cursor: pointer;
+    color: black !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-lit {
+    cursor: pointer;
+    color: olive !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-pea {
+    cursor: pointer;
+    color: palevioletred !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-phy {
+    cursor: pointer;
+    color: purple !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

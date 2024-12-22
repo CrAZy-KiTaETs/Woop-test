@@ -1,0 +1,65 @@
+@use "./globals.scss" as *;
+
+.paginate-container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  .paginate-link {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f1f1f1;
+      color: #0056b3;
+    }
+  }
+
+  .paginate-active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+
+    .paginate-link {
+      pointer-events: none;
+    }
+  }
+
+  .break {
+    padding: 0.5rem 1rem;
+    color: #666;
+  }
+
+  .previous,
+  .next {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background-color: #f1f1f1;
+      color: #0056b3;
+    }
+  }
+
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+
+    & .paginate-link {
+      color: #999;
+    }
+  }
+}

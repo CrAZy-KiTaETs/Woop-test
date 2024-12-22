@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ESNext", // Указывает версию ECMAScript
+      "lib": ["DOM", "DOM.Iterable", "ESNext"], // Стандартные библиотеки
+      "jsx": "react-jsx", // Устанавливаем поддержку JSX для React
+      "module": "ESNext", // ECMAScript модули
+      "moduleResolution": "Node", // Разрешение модулей как в Node.js
+      "strict": true, // Включение строгого режима TypeScript
+      "esModuleInterop": true, // Совместимость с CommonJS модулями
+      "skipLibCheck": true, // Пропуск проверки типов в библиотеках
+      "forceConsistentCasingInFileNames": true, // Проверка регистра в именах файлов
+      "resolveJsonModule": true, // Импорт JSON-файлов
+      "isolatedModules": true, // Один файл = один модуль
+      "allowSyntheticDefaultImports": true, // Разрешить синтетические импорты
+      "baseUrl": ".", // Базовый путь
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
